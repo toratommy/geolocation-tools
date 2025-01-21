@@ -2,8 +2,8 @@
 Repository of utility functions for performing geospatial analytics.
 
 **Functions include:**
-- `reverse_geocode_geojson_to_dataframe`: Reverse geocodes latitude/longitude coordinates from a GeoJSON file into addresses formatted as '123 Main St, Seattle, WA 10001' using the Google Geocoder and returns a DataFrame with all original fields plus the new address field.
-- `get_redfin_estimate`: scrapes redfin property value estimates using the following methodology:
+- `reverse_geocode_geojson_to_dataframe`: Reverse geocodes latitude/longitude coordinates from a GeoJSON file into addresses formatted as '123 Main St, Seattle, WA 10001' using the GoogleMaps Geocoder and returns a DataFrame with all original fields plus the new address field.
+- `get_redfin_estimate`: uses Selenium to scrape redfin property value estimates using the following methodology:
     1. Opens https://www.redfin.com/what-is-my-home-worth
     2. Locates the text box with placeholder='Enter your address'.
     3. Types the given address.
